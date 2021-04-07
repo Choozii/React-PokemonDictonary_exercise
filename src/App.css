@@ -1,38 +1,72 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+:root {
+  --base-color-bright: rgb(248, 233, 144);
+  --base-color-normal: rgb(167, 148, 94);
+  --base-color-dark: rgb(124, 114, 68);
+  --base-color-brown: rgb(78, 72, 42);
+  --base-color-white: rgb(255, 252, 234);
+  --font-style:  'Press Start 2P', cursive;
+  --big-font-size: 2rem;
+  --normal-font-size: 1rem;
+  --small-font-size: .8rem;
+  --micro-font-size: .5rem;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+* {
+  box-sizing: border-box;
+  font-family: var(--font-style);
+  font-weight: 500;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+p {
+  margin: 0;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+nav {
   display: flex;
-  flex-direction: column;
+  width: 100%;
+  height: 80px;
+  justify-content: space-between;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  background-color: var(--base-color-normal)
 }
 
-.App-link {
-  color: #61dafb;
+a {
+  text-decoration: none;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+nav a {
+  margin-right: 50px;
+  text-decoration: none;
+  padding: 0 1.5rem;
+  background-color: var(--base-color-normal);
+  color: var(--base-color-white);
+  font-size: .8rem;
+  border-radius: .5rem;
+}
+
+nav a:hover {
+  background-color: var(--base-color-brown);
+}
+
+nav a:active {
+  background-color: var(--base-color-dark);
+}
+
+.nav__logo {
+  width: 60px;
+  height: 60px;
+  margin-left: 1.5rem;
+}
+
+.App__pokeDic{
+  width : 50%;
+  margin : auto;
+  background-color: var(--base-color-white);
+}
+
+.App{
+  background-image: url('assets/images/poke__background.jpg');
 }
